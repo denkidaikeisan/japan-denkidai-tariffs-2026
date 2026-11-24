@@ -1,0 +1,55 @@
+{
+  "name": "japan-denkidai-tariffs-2026",
+  "version": "2026.1.0",
+  "description": "日本大手電力10社 2026年11月改定従量電灯3段階単価・2026年度再エネ賦課金（4.18円/kWh）データセット＆ゼロ依存電気代計算エンジン (Japan 10 utilities 2026 tariffs & electricity cost calculator)",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js"
+    },
+    "./data/power-companies-2026.json": "./data/power-companies-2026.json"
+  },
+  "files": [
+    "src/",
+    "data/",
+    "README.md",
+    "LICENSE",
+    "CITATION.cff",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "homepage": "https://denkidaikeisan.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denkidaikeisan/japan-denkidai-tariffs-2026.git"
+  },
+  "bugs": {
+    "url": "https://github.com/denkidaikeisan/japan-denkidai-tariffs-2026/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "電気代",
+    "従量電灯",
+    "再エネ賦課金",
+    "東京電力",
+    "関西電力",
+    "家電消費電力",
+    "japan",
+    "electricity-tariff",
+    "denkidai",
+    "tepco",
+    "kepco",
+    "energy-calculator",
+    "open-data",
+    "csv-dataset",
+    "json-dataset"
+  ]
+}

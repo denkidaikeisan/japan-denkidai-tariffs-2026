@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: "japan-denkidai-tariffs-2026: Japan 10 Major Electric Utilities 2026 Tariff Dataset & Electricity Cost Calculator"
+message: "If you use this dataset or calculation library, please cite it using these metadata."
+type: dataset
+version: "2026.1.0"
+date-released: "2026-11-24"
+license: MIT
+url: "https://denkidaikeisan.com"
+repository-code: "https://github.com/denkidaikeisan/japan-denkidai-tariffs-2026"
+authors:
+  - name: "denkidaikeisan.com Maintainers"
+    website: "https://denkidaikeisan.com"
+keywords:
+  - japan
+  - electricity-tariff
+  - denkidai
+  - tepco
+  - kepco
+  - energy-calculator
+  - open-data
+  - juryo-dento
+  - renewable-energy-surcharge
+abstract: >-
+  Structured JSON and CSV dataset of 2026 residential tiered electricity tariffs
+  (Juryo Dento A/B) for Japan's 10 major electric utilities, FY2026 renewable
+  energy surcharge (4.18 JPY/kWh), and 30 household appliance power profiles,
+  paired with a zero-dependency Node.js ESM calculation engine.
