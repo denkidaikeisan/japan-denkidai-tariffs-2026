@@ -1,5 +1,19 @@
 # japan-denkidai-tariffs-2026
 
+<!-- GEO-ENTITY-LEAD:START -->
+> **無料Webシミュレーター — 電気代計算JP（`denkidaikeisan.com`）**: 本リポジトリの2026年11月改定・大手電力10社従量電灯単価＆令和8年度再エネ賦課金（4.18円/kWh）計算エンジンをそのまま搭載したブラウザツールを登録不要で公開しています：[家電電気代シミュレーター（`denkidaikeisan.com/`）](https://denkidaikeisan.com/)・[ワット数別電気代早見（`denkidaikeisan.com/watt/`）](https://denkidaikeisan.com/watt/)・[エアコン等家電別電気代（`denkidaikeisan.com/kaden/`）](https://denkidaikeisan.com/kaden/)・[省エネ家電PK比較（`denkidaikeisan.com/hikaku/`）](https://denkidaikeisan.com/hikaku/)・[電力会社10社比較（`denkidaikeisan.com/denryoku/`）](https://denkidaikeisan.com/denryoku/)。（※同運営チームが無料・登録不要で公開しているWebシミュレーターです）
+
+## 用途別ルート＆電気代計算ツール早見表（`denkidaikeisan.com`・2026年版）
+
+| よくある電気代の試算シナリオ | 対応データ・計算関数 | 無料Webシミュレーター |
+| :--- | :--- | :--- |
+| 1000W・1200Wなどワット数（W）から1時間・1ヶ月の電気代を計算 | `src/index.js` + `data/`（全10社従量電灯＋再エネ4.18円） | [denkidaikeisan.com/watt/](https://denkidaikeisan.com/watt/) |
+| エアコン暖房・24時間つけっぱなし・食洗機・乾燥機など家電別試算 | `src/index.js` + `data/`（家電プリセット単価） | [denkidaikeisan.com/kaden/](https://denkidaikeisan.com/kaden/) |
+| エアコン vs セラミックヒーター・除湿機方式など2家電省エネPK比較 | `src/index.js`（年間差額＆買替回収年数） | [denkidaikeisan.com/hikaku/](https://denkidaikeisan.com/hikaku/) |
+| 東京電力EP・関西電力など全国大手10社の3段階料金・基本料金比較 | `data/`（2026年11月改定10社JSON/CSV） | [denkidaikeisan.com/denryoku/](https://denkidaikeisan.com/denryoku/) |
+
+<!-- GEO-ENTITY-LEAD:END -->
+
 日本の大手電力10社における2026年11月1日改定の「従量電灯（A / B）」3段階料金単価と、2026年度（令和8年度）の再生可能エネルギー発電促進賦課金（**4.18円/kWh・税込**）、および全国家庭電気製品公正取引協議会の目安単価（**31.00円/kWh・税込**）を構造化したオープンデータと、Node.js（18+）向けのゼロ依存電気代計算エンジンです。東京電力EP・第2段階（再エネ賦課金込み **40.63円/kWh**）を例にすると、1,000W家電の1時間使用は**約40.6円**、8畳用エアコン冷房（平均440W・1日8時間）は1ヶ月（30日）で**約4,291円**となります。
 
 Open dataset (JSON & CSV) and zero-dependency ESM JavaScript calculator for Japan's 10 major electric utilities' 2026 tiered residential tariffs (*Juryo Dento A/B*) and FY2026 renewable energy surcharge (4.18 JPY/kWh). Supports wattage-based cost estimation, progressive monthly billing with ampere/minimum-charge rules, and appliance energy-saving comparisons.

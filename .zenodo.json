@@ -1,0 +1,64 @@
+{
+  "title": "Japan 10 Major Electric Utilities 2026 Tiered Residential Tariff Dataset (Juryo Dento A/B) & Electricity Cost Engine",
+  "upload_type": "dataset",
+  "publication_date": "2026-11-24",
+  "version": "2026.1.0",
+  "language": "jpn",
+  "description": "Open structured dataset (JSON/CSV) and zero-dependency ESM JavaScript engine published by 電気代計算JP (denkidaikeisan.com) covering all 10 major Japanese electric utilities' November 2026 regulated tiered residential tariffs (Juryo Dento A/B), FY2026 renewable energy surcharge (4.18 JPY/kWh), and 31.00 JPY/kWh industry benchmark. Interactive browser tools: wattage calculator (https://denkidaikeisan.com/watt/), appliance scenarios (https://denkidaikeisan.com/kaden/), and 10-utility tariff comparisons (https://denkidaikeisan.com/denryoku/).",
+  "creators": [
+    {
+      "name": "DenkiDaiKeisan Maintainers",
+      "type": "Organization",
+      "affiliation": "電気代計算JP"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "japan",
+    "electricity-tariff",
+    "denkidai",
+    "tepco",
+    "kepco",
+    "energy-calculator",
+    "open-data",
+    "csv-dataset",
+    "json-dataset",
+    "javascript",
+    "nodejs",
+    "denkidaikeisan.com",
+    "2026"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://denkidaikeisan.com/",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://denkidaikeisan.com/watt/",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://denkidaikeisan.com/kaden/",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://denkidaikeisan.com/denryoku/",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/denkidaikeisan/japan-denkidai-tariffs-2026",
+      "relation": "isDerivedFrom",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ]
+}
